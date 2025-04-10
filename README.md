@@ -24,7 +24,7 @@ A fun and interactive React Native app that displays random jokes categorized by
 
 ```bash
 git clone https://github.com/kevinsultana/jokesApps.git
-cd funny-categories-app
+cd jokesApps
 ```
 
 ### 2. Install Dependencies
