@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # 😂 Funny Categories - React Native App
 
 A fun and interactive React Native app that displays random jokes categorized by topic using [JokeAPI](https://jokeapi.dev/). Includes expandable list views, animated joke items, pull-to-refresh, and "Load More" functionality.
@@ -18,95 +17,64 @@ A fun and interactive React Native app that displays random jokes categorized by
 
 ---
 
-## 📱 Preview
-
-> Tambahkan screenshot di sini jika ada  
-> ![App Screenshot](https://your-screenshot-url-if-any.png)
-
----
 
 ## 🚀 Getting Started
 
 ### 1. Clone the Repo
 
-\`\`\`bash
-git clone https://github.com/yourusername/funny-categories-app.git
+```bash
+git clone https://github.com/kevinsultana/jokesApps.git
 cd funny-categories-app
-\`\`\`
+```
 
 ### 2. Install Dependencies
 
-\`\`\`bash
+```bash
 npm install
-# atau
+```
+ or
+```bash
 yarn install
-\`\`\`
+```
 
 ### 3. Run the App
 
-#### Menggunakan Expo:
+Android
+```bash
+npx react-native run-android
+```
 
-\`\`\`bash
-npx expo start
-\`\`\`
-
-- Scan QR code dengan aplikasi **Expo Go** di Android/iOS  
-- Jalankan di emulator dengan:  
-  - \`i\` untuk iOS  
-  - \`a\` untuk Android  
-
----
-
-## ⚙️ Build Instructions
-
-### Android APK
-
-\`\`\`bash
-npx expo build:android
-# atau jika menggunakan EAS:
-npx eas build -p android
-\`\`\`
-
-### iOS (Khusus Mac)
-
-\`\`\`bash
-npx eas build -p ios
-\`\`\`
-
-> 💡 Untuk build iOS butuh akun Apple Developer dan macOS.
-
+Ios (mac Only)
+```bash
+cd ios
+pod install
+cd ..
+npx react-native run-ios
+```
 ---
 
 ## 🧩 Project Structure
 
-\`\`\`bash
-📁 components/          # UI components seperti Header, CategoryItem
-📁 animation/           # Komponen animasi
-📁 styles/              # StyleSheet + palet warna
-📁 utils/               # Fungsi API dan helper
-📄 App.js               # Entry point aplikasi
-\`\`\`
+```bash
+📁 components/          # UI components (Header, CategoryItem)
+📁 animation/           # Component animation
+📁 assets/              # Aplication image
+📁 styles/              # StyleSheet + color pallete
+📁 utils/               # API function and helper
+📄 App.js               # Entry point application
+```
 
 ---
 
 ## 📦 Dependencies
 
 - [React Native](https://reactnative.dev/)
-- [Expo](https://expo.dev/)
-- [JokeAPI](https://jokeapi.dev/)
 - \`react-native-vector-icons\`
 - \`react-native-responsive-screen\`
-- \`react-native-reanimated\`
+- \`axios\`
 
 ---
 
-## 📌 To-Do
-
-- [ ] Dark mode support 🌙  
-- [ ] Favorite jokes dengan AsyncStorage 💾  
-- [ ] Share jokes 📤  
-
----
 
 ## 👨‍💻 Developer
 
